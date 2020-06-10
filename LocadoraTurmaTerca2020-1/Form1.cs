@@ -10,11 +10,25 @@ using System.Windows.Forms;
 
 namespace LocadoraTurmaTerca2020_1
 {
-    public partial class Form1 : Form
+    public partial class FrmPrincipal : Form
     {
-        public Form1()
+        public FrmPrincipal()
         {
             InitializeComponent();
+        }
+
+        private void clienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // instanciando o formulário a ser aberto
+            FrmCadastroCliente frmCadastroCliente = new FrmCadastroCliente();
+
+            // informando que a janela desse form criado
+            // será aberta dentro do FrmPrincipal
+            frmCadastroCliente.MdiParent = this;
+
+            // mandando o formulário ser aberto
+            frmCadastroCliente.Show();
+
         }
     }
 }
