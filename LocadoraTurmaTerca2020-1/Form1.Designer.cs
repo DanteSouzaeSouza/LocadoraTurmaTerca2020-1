@@ -30,9 +30,9 @@
         {
             this.mnuPrincipal = new System.Windows.Forms.MenuStrip();
             this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.movimentaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.veículoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.movimentaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.locaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.devoluçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuPrincipal.SuspendLayout();
@@ -59,15 +59,6 @@
             this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(80, 24);
             this.cadastroToolStripMenuItem.Text = "Cadastro";
             // 
-            // movimentaçãoToolStripMenuItem
-            // 
-            this.movimentaçãoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.locaçãoToolStripMenuItem,
-            this.devoluçãoToolStripMenuItem});
-            this.movimentaçãoToolStripMenuItem.Name = "movimentaçãoToolStripMenuItem";
-            this.movimentaçãoToolStripMenuItem.Size = new System.Drawing.Size(120, 24);
-            this.movimentaçãoToolStripMenuItem.Text = "Movimentação";
-            // 
             // clienteToolStripMenuItem
             // 
             this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
@@ -80,17 +71,27 @@
             this.veículoToolStripMenuItem.Name = "veículoToolStripMenuItem";
             this.veículoToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.veículoToolStripMenuItem.Text = "Veículo";
+            this.veículoToolStripMenuItem.Click += new System.EventHandler(this.veículoToolStripMenuItem_Click);
+            // 
+            // movimentaçãoToolStripMenuItem
+            // 
+            this.movimentaçãoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.locaçãoToolStripMenuItem,
+            this.devoluçãoToolStripMenuItem});
+            this.movimentaçãoToolStripMenuItem.Name = "movimentaçãoToolStripMenuItem";
+            this.movimentaçãoToolStripMenuItem.Size = new System.Drawing.Size(120, 24);
+            this.movimentaçãoToolStripMenuItem.Text = "Movimentação";
             // 
             // locaçãoToolStripMenuItem
             // 
             this.locaçãoToolStripMenuItem.Name = "locaçãoToolStripMenuItem";
-            this.locaçãoToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.locaçãoToolStripMenuItem.Size = new System.Drawing.Size(155, 26);
             this.locaçãoToolStripMenuItem.Text = "Locação";
             // 
             // devoluçãoToolStripMenuItem
             // 
             this.devoluçãoToolStripMenuItem.Name = "devoluçãoToolStripMenuItem";
-            this.devoluçãoToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.devoluçãoToolStripMenuItem.Size = new System.Drawing.Size(155, 26);
             this.devoluçãoToolStripMenuItem.Text = "Devolução";
             // 
             // FrmPrincipal
